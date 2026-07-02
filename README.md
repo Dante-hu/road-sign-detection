@@ -6,9 +6,9 @@ A real-time road sign detection system built with a two-model YOLOv8 ensemble, c
 
 ## Demo
 
-Upload an image or video to the live Gradio app to see detections instantly.
+![Demo](demo.gif)
 
-> Run `road_sign_detection_mvp.ipynb` in Google Colab and click the public URL generated in the final cell.
+> Run `road_sign_detection_mvp-complete.ipynb` in Google Colab and click the public URL generated in the final cell to try it live.
 
 ---
 
@@ -16,8 +16,8 @@ Upload an image or video to the live Gradio app to see detections instantly.
 
 | Model | Architecture | Classes | mAP@50 | mAP@50-95 | Precision | Recall | Inference |
 |---|---|---|---|---|---|---|---|
-| Speed Signs | YOLOv8s | 15 | 93.99% | 78.69% | 89.71% | 91.38% | ~4ms/frame |
-| LISA Road Signs | YOLOv8n | 47 | — | — | — | — | ~4ms/frame |
+| Speed Signs | YOLOv8s | 15 | 92.08% | 77.68% | 91.13% | 84.83% | ~4ms/frame |
+| LISA Road Signs | YOLOv8n | 47 | 93.99% | 78.69% | 89.71% | 91.38% | ~4ms/frame |
 
 Both models run on GPU (T4). Total ensemble pipeline: **~8ms per frame**.
 
